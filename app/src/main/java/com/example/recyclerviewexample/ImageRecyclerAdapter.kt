@@ -5,6 +5,8 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_photograph.view.*
 import java.util.*
@@ -44,8 +46,8 @@ class ImageRecyclerAdapter(val items: ArrayList<ImageObject>) :
     }
 
     class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val authorTextView = itemView.author
-        val yearTextView = itemView.year
-        val image = itemView.image
+        val authorTextView: TextView = itemView.author
+        val yearTextView: TextView = itemView.year
+        val image: ImageView = itemView.image
     }
 }

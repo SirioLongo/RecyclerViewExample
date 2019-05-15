@@ -12,7 +12,7 @@ class SpacingItemDecoration(val spacing: Int, val context: Context): RecyclerVie
         parent: RecyclerView,
         state: RecyclerView.State
     ) {
-        val spacingDp = spacing * context.getResources().getDisplayMetrics().density
+        val spacingDp = spacing * context.resources.displayMetrics.density
         if(parent.getChildAdapterPosition(view) == 0) {
             outRect.top = spacingDp.toInt()
         }
